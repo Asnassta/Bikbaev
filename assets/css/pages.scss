@@ -91,6 +91,80 @@
 				}
 			}
 		}
+		&__select {
+			position: relative;
+			select {
+				appearance: none;
+			}
+		}
+		&__icon {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 17px;
+			z-index: 10;
+		}
+		.jq-selectbox {
+			width: 100%;
+			&__select {
+				background-color: $wh;
+				padding: 17px 36px 17px 46px;
+				position: relative;
+				&:after {
+					content: "";
+					width: 13px;
+					height: 7px;
+					background: url("../images/arrow-bl.svg") center no-repeat;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 17px;
+					z-index: 1;
+					transition: all .3s linear;
+				}
+				&-text {
+					font-family: $ff;
+					font-size: 16px;
+					font-weight: 300;
+					color: $dgray;
+					line-height: 1.16;
+				}
+			}
+			&__dropdown {
+				background-color: $wh;
+				width: 100%;
+				border-top: 1px solid $gray;
+				border-bottom: 1px solid $gray;
+				li {
+					padding: 10px 36px 10px 46px;
+					font-family: $ff;
+					font-size: 16px;
+					font-weight: 300;
+					color: $dgray;
+					line-height: 1.16;
+					transition: all .2s linear;
+					&:hover {
+						background-color: $dgray;
+						color: $wh;
+					}
+					&.disabled {
+						display: none;
+					}
+				}
+			}
+			&.changed {
+				.jq-selectbox__select-text {
+					color: $bl;
+				}
+			}
+			&.dropdown {
+				.jq-selectbox__select {
+					&:after {
+						transform: translateY(-50%) rotate(180deg);
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -185,6 +259,16 @@
 			&__input {
 				input {
 					font-size: 14px;
+				}
+			}
+			.jq-selectbox {
+				&__select-text {
+					font-size: 14px;
+				}
+				&__dropdown {
+					li {
+						font-size: 14px;
+					}
 				}
 			}
 		}
