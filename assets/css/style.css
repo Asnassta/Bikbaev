@@ -282,43 +282,45 @@
     align-items: flex-start; }
   .work-detal__content {
     width: 28%; }
-  .work-detal__photo img {
-    max-width: 100%; }
-  .work-detal__photo_zoom {
-    position: relative;
-    cursor: pointer; }
-    .work-detal__photo_zoom img {
-      width: 100%; }
-    .work-detal__photo_zoom .work-detal__photo-icon {
-      position: absolute;
-      top: 19px;
-      right: 19px;
-      z-index: 1;
-      width: 32px;
-      height: 32px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      border: 2px solid #414141;
-      border-radius: 50%;
-      -webkit-transition: all .2s linear;
-      -o-transition: all .2s linear;
-      transition: all .2s linear; }
-      .work-detal__photo_zoom .work-detal__photo-icon svg {
-        width: 16px;
-        height: 16px;
-        fill: #414141;
+  .work-detal__photo {
+    display: block; }
+    .work-detal__photo img {
+      max-width: 100%; }
+    .work-detal__photo_zoom {
+      position: relative;
+      cursor: pointer; }
+      .work-detal__photo_zoom img {
+        width: 100%; }
+      .work-detal__photo_zoom .work-detal__photo-icon {
+        position: absolute;
+        top: 19px;
+        right: 19px;
+        z-index: 1;
+        width: 32px;
+        height: 32px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border: 2px solid #414141;
+        border-radius: 50%;
         -webkit-transition: all .2s linear;
         -o-transition: all .2s linear;
         transition: all .2s linear; }
-    .work-detal__photo_zoom:hover .work-detal__photo-icon {
-      opacity: .7; }
+        .work-detal__photo_zoom .work-detal__photo-icon svg {
+          width: 16px;
+          height: 16px;
+          fill: #414141;
+          -webkit-transition: all .2s linear;
+          -o-transition: all .2s linear;
+          transition: all .2s linear; }
+      .work-detal__photo_zoom:hover .work-detal__photo-icon {
+        opacity: .7; }
   .work-detal__info {
     width: 72%;
     padding-left: 30px;
