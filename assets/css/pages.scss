@@ -696,5 +696,15 @@
 			margin-bottom: 15px;
 		}
 	}
+	.list-block {
+		li {
+			padding-left: 20px;
+			font-size: 14px;
+			&:before {
+				top: 9px;
+				left: 5px;
+			}
+		}
+	}
 }
 /*=========/adaptive========*/

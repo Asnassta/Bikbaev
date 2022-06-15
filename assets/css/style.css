@@ -596,7 +596,13 @@
   .text-block {
     font-size: 14px; }
     .text-block p {
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+  .list-block li {
+    padding-left: 20px;
+    font-size: 14px; }
+    .list-block li:before {
+      top: 9px;
+      left: 5px; } }
 
 /*=========/adaptive========*/
 /*Reset
